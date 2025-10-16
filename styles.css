@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+img {
+    display: block;
+    margin: 10vh auto 5vh;
+    width: 10vw;
+    box-shadow: 0px 10px 1000px #ffffff;
+    border-radius: 1000px;
+}
+
+h1,
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00000000;
+    box-shadow: 0px 10px 130px #ffffff;
+    margin: 0 10vw;
+    border-radius: 100px;
+}
+
+h1 {
+    background-color: #000000;
+    margin: 0 12vw 3vh;
+    color: #ffff;
+    font-size: 220%;
+}
+
+.input-1 {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    margin: 4vh 0 2vh;
+    padding: 1vw;
+    font-size: 150%;
+}
+
+.input-2 {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    margin: 0 0 2vh;
+    padding: 1vw;
+    font-size: 150%;
+}
+
+input:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.694);
+}
+
+button {
+    border-radius: 14px;
+    border: none;
+    padding: 3vh 6vw;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+p {
+    margin: 1vh 0 3vh;
+    color: #ffff;
+    font-size: 150%;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+    
+    img {
+        margin: 7vh auto 5vh;
+        width: 50%;
+    }
+
+    .input-1 {
+        margin: 20% 0 0;
+    }
+
+    .input-2 {
+        margin: 20% 0 20%;
+    }
+
+    button {
+        padding: 1vh 20vw;
+        margin-bottom: 7vh;
+    }
+}
