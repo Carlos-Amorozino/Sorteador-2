@@ -6,9 +6,17 @@ function calculate() {
 
     const minCeiled = Math.ceil(input1);
     const maxFloored = Math.floor(input2);
-    const result = Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
 
-    resultP.innerHTML = `RESULTADO: ${result}`
+    if (minCeiled < maxFloored) {
+
+        const result = Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+
+        resultP.innerHTML = `RESULTADO: ${result}`
+    }
+
+    else {
+        resultP.innerHTML = `O valor MÍNIMO deve ser MENOR que o valor MÁXIMO.`
+    }
 }
 
 button.addEventListener(`click`, calculate)
